@@ -1,0 +1,1 @@
+import assert from 'node:assert/strict'; import { safeAsync } from '../src/index.js'; const ok=await safeAsync(async()=>42); assert.deepEqual(ok,[42,null]); const bad=await safeAsync(async()=>{ throw new Error('x')}); assert.equal(bad[0],null); assert.ok(bad[1] instanceof Error); console.log('JS-10 OK');

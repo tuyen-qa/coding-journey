@@ -1,0 +1,1 @@
+import assert from 'node:assert/strict'; import { compare } from '../src/index.js'; assert.deepEqual(compare(0,'0'),{loose:true,strict:false}); assert.deepEqual(compare(NaN,NaN),{loose:false,strict:false}); console.log('JS-00 OK');

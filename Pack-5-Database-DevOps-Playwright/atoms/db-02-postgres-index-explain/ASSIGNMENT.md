@@ -1,0 +1,1 @@
+Chạy `EXPLAIN ANALYZE` với/không với index cho truy vấn tìm orders theo user_id & created_at.

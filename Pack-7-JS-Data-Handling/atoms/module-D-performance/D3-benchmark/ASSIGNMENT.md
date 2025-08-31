@@ -1,0 +1,1 @@
+Ghi kết quả vào BENCHMARK.md.

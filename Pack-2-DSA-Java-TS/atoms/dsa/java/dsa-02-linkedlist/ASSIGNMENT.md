@@ -1,0 +1,1 @@
+reverse(head), hasCycle(head) (Floyd).

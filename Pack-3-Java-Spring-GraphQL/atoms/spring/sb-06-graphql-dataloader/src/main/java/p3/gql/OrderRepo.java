@@ -1,0 +1,1 @@
+package p3.gql; import org.springframework.data.jpa.repository.*; import java.util.*; public interface OrderRepo extends JpaRepository<OrderE,Long>{ java.util.List<OrderE> findByUserIdIn(java.util.List<Long> ids); }

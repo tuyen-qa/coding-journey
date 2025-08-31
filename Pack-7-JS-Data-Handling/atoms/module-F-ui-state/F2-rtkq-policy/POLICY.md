@@ -1,0 +1,1 @@
+Giải thích tag types, cacheTime, refetchOnFocus/reconnect, scenario đề xuất.

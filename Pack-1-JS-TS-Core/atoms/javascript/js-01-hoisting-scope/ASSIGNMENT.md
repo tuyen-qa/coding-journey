@@ -1,0 +1,1 @@
+Tạo makeCounter(start) sử dụng closure; test tăng giá trị đúng.

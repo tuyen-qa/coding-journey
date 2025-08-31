@@ -1,0 +1,1 @@
+wrap<T>(x) và first<T>(arr:T[]):T.

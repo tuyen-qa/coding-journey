@@ -1,0 +1,1 @@
+import { strict as assert } from 'assert'; import { safeParseInt } from '../src/index'; assert.equal(safeParseInt('10').ok, true); assert.equal(safeParseInt('a').ok, false);

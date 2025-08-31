@@ -1,0 +1,4 @@
+type Query { users: [User!]! }
+type User { id: ID!, email: String!, orders: [Order!]! }
+type Order { id: ID!, totalCents: Int! }
+type Mutation { createUser(email:String!): User! }

@@ -1,0 +1,1 @@
+Implement encode/decode base62 + idempotent mapping.

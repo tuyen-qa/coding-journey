@@ -1,0 +1,1 @@
+Dùng ApolloClient query { hello }.

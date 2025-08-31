@@ -1,0 +1,1 @@
+# TS-05 — Functional Typing

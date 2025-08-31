@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: capdb
+    ports: ["5433:5432"]
+    volumes:
+      - ./db/postgres/schema.sql:/docker-entrypoint-initdb.d/001_schema.sql
+  gateway:
+    image: node:18-alpine
+    working_dir: /srv
+    volumes: [ "./gateway:/srv" ]
+    command: ["node","index.js"]
+    ports: ["4000:4000"]
+    depends_on: [ db ]
+  frontend:
+    image: node:18-alpine
+    working_dir: /srv
+    volumes: [ "./frontend:/srv" ]
+    command: ["node","src/dev-server.js"]
+    ports: ["3000:3000"]
+    depends_on: [ gateway ]

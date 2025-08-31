@@ -1,0 +1,1 @@
+Viết compare(a,b) trả {loose:boolean, strict:boolean}; test vài case đặc biệt.

@@ -1,0 +1,1 @@
+export const existsSubarraySumK=(nums,k)=>{ let s=0; const seen=new Set([0]); for(const x of nums){ s+=x; if(seen.has(s-k)) return true; seen.add(s);} return false; }

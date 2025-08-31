@@ -1,0 +1,1 @@
+Run app: `mvn spring-boot:run`. Viết thêm 1 endpoint `/echo?x=` và test.

@@ -1,0 +1,1 @@
+const ok=(ws,d,cap)=>{ let day=1,cur=0; for(const w of ws){ if(w>cap) return false; if(cur+w>cap){ day++; cur=0;} cur+=w;} return day<=d; }; export const minCapacity=(ws,d)=>{ let l=Math.max(...ws), r=ws.reduce((a,b)=>a+b,0), ans=r; while(l<=r){ const m=(l+r)>>1; if(ok(ws,d,m)){ ans=m; r=m-1; } else l=m+1; } return ans; }

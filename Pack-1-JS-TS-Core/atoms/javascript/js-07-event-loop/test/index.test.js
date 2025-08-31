@@ -1,0 +1,1 @@
+import assert from 'node:assert/strict'; import { order } from '../src/index.js'; const arr = await order(); assert.equal(arr[0],'start'); assert.equal(arr[1],'micro'); assert.equal(arr.includes('macro'), true); console.log('JS-07 OK');

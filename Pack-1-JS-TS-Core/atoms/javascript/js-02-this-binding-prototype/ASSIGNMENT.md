@@ -1,0 +1,1 @@
+Implement bindOnce(fn, obj) trả function gọi với this=obj.

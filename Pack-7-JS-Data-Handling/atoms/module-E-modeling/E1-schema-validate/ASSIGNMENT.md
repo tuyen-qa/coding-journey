@@ -1,0 +1,1 @@
+Viết mini `schema` parse/validate.

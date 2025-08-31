@@ -1,0 +1,1 @@
+import assert from 'node:assert/strict'; import { makeCancellable } from '../src/index.js'; const base=new Promise(r=> setTimeout(()=>r(1), 20)); const c=makeCancellable(base); setTimeout(()=>c.cancel(),5); try{ await c.promise; assert.fail('should cancel'); }catch(e){ assert.equal(e.message,'Cancelled'); } console.log('JS-08 OK');

@@ -1,0 +1,1 @@
+Partial/Pick/Omit/Record demo + update immutable.

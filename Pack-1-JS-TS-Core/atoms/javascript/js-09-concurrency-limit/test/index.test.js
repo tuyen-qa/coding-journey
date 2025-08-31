@@ -1,0 +1,1 @@
+import assert from 'node:assert/strict'; import { pLimit } from '../src/index.js'; const lim=pLimit(2); let running=0, peak=0; const task=(ms)=> lim(()=> new Promise(r=>{ running++; peak=Math.max(peak,running); setTimeout(()=>{ running--; r(ms); }, ms); })); await Promise.all([task(10),task(10),task(10),task(10)]); assert.equal(peak,2); console.log('JS-09 OK');

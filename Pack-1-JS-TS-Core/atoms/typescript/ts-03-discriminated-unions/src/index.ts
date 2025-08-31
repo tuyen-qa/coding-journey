@@ -1,0 +1,1 @@
+export type State = {type:'idle'}|{type:'loading'}|{type:'done',data:string}|{type:'error',message:string}; export function view(s:State):string{ switch(s.type){ case 'idle':return 'IDLE'; case 'loading':return '...'; case 'done':return s.data; case 'error':return '!' + s.message; default: const _exhaustive: never = s as never; return String(_exhaustive);} }

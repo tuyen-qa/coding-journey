@@ -1,0 +1,1 @@
+export function makeCancellable(p){ let rej; const pr = new Promise((res,rej2)=>{ rej=rej2; p.then(res,rej2); }); return { promise: pr, cancel(){ rej?.(new Error('Cancelled')); } } }

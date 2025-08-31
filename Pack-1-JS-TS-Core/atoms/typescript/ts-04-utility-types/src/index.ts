@@ -1,0 +1,1 @@
+export type User={id:string;name:string;email?:string}; export function rename(u:User, name:string): Readonly<User>{ return {...u, name} }

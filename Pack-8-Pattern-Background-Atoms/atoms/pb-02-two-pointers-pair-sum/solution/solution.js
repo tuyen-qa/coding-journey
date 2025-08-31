@@ -1,0 +1,1 @@
+export const hasPairWithSum=(arr,t)=>{ let l=0,r=arr.length-1; while(l<r){ const s=arr[l]+arr[r]; if(s===t) return true; s<t? l++: r--; } return false; }

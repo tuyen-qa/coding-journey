@@ -1,0 +1,1 @@
+package p3.jpa; import org.springframework.data.jpa.repository.*; public interface UserRepo extends JpaRepository<User,Long>{}

@@ -1,0 +1,1 @@
+Dùng Promise.all / any / race; test behavior cơ bản.

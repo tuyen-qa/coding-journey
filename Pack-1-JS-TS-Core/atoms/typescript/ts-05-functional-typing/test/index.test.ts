@@ -1,0 +1,1 @@
+import { strict as assert } from 'assert'; import { curry, compose } from '../src/index'; const add=(a:number,b:number)=>a+b; const add1=curry(add)(1); assert.equal(add1(2),3); const f=compose((x:number)=>x*2,(y:number)=>y+1); assert.equal(f(3),8);

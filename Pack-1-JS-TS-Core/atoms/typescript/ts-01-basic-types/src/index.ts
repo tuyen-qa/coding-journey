@@ -1,0 +1,2 @@
+export type Result<T> = { ok:true, value:T } | { ok:false, error:string };
+export function safeParseInt(s:string): Result<number>{ const n=parseInt(s,10); return Number.isFinite(n)? {ok:true,value:n}:{ok:false,error:'NaN'} }

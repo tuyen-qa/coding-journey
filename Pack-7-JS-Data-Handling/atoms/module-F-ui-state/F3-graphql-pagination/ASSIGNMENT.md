@@ -1,0 +1,1 @@
+mergeConnections(prev, next) dedup edges.

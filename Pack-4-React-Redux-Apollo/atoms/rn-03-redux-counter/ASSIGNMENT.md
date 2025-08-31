@@ -1,0 +1,1 @@
+Hiển thị và tăng/giảm count.

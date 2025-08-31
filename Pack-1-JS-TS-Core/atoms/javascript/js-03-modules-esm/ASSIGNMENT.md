@@ -1,0 +1,1 @@
+Xuất func add từ math.js và import ở main.js; test kết quả.

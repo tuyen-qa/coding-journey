@@ -1,0 +1,1 @@
+import { strict as assert } from 'assert'; import { wrap, first } from '../src/index'; assert.equal(wrap(1).x,1); assert.equal(first(['a','b']),'a');

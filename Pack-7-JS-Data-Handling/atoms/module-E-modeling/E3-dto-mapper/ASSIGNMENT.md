@@ -1,0 +1,1 @@
+Đảm bảo không mutate entity.

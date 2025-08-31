@@ -1,0 +1,1 @@
+export function lengthOfLongestUniqueSubstring(s){ const pos=new Map(); let l=0,b=0; for(let r=0;r<s.length;r++){ const c=s[r]; if(pos.has(c)) l=Math.max(l,pos.get(c)); b=Math.max(b,r-l+1); pos.set(c,r+1);} return b;}

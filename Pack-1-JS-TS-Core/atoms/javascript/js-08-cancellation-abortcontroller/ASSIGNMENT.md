@@ -1,0 +1,1 @@
+makeCancellable(p) trả {promise, cancel}; cancel() reject bằng 'Cancelled'.

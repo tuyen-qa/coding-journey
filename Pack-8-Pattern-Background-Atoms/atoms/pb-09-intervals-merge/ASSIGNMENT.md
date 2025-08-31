@@ -1,0 +1,1 @@
+Cài `mergeIntervals(intervals)`.

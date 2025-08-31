@@ -1,0 +1,1 @@
+Cài `twoSum(nums, target)` trả về [i,j] (i<j) hoặc null. Thêm 5 test.

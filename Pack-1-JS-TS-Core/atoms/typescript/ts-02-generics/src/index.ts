@@ -1,0 +1,1 @@
+export const wrap=<T>(x:T)=>({x}); export const first=<T>(a:T[])=> a[0];

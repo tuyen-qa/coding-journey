@@ -1,0 +1,1 @@
+export const compare=(a,b)=>({ loose: a==b, strict: a===b });

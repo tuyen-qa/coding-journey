@@ -1,0 +1,1 @@
+safeAsync(fn) → Promise<[data, error]>; test đường lỗi.

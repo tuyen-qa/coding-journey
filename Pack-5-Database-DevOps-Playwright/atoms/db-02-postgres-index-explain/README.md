@@ -1,0 +1,3 @@
+-- Thử tạo composite index và so sánh:
+-- CREATE INDEX IF NOT EXISTS idx_orders_user_date ON orders(user_id, created_at);
+-- EXPLAIN ANALYZE SELECT * FROM orders WHERE user_id=$1 AND created_at > NOW() - INTERVAL '30 days';

@@ -1,0 +1,1 @@
+Viết thêm rule mới (BOGO) & test pass.

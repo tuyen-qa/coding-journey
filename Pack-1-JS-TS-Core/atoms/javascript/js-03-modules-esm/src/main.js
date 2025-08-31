@@ -1,0 +1,1 @@
+import { add } from './math.js'; export const sum3 = (a,b,c)=> add(add(a,b),c);

@@ -1,0 +1,1 @@
+import { strict as assert } from 'assert'; import { rename } from '../src/index'; const u={id:'1',name:'A'} as const; const v=rename(u,'B'); assert.equal(v.name,'B');

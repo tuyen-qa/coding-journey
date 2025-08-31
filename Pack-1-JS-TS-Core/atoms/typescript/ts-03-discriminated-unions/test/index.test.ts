@@ -1,0 +1,1 @@
+import { strict as assert } from 'assert'; import { view } from '../src/index'; assert.equal(view({type:'idle'}),'IDLE'); assert.equal(view({type:'done',data:'ok'}),'ok');

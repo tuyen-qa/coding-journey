@@ -1,0 +1,1 @@
+Ghép user gần giống.

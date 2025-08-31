@@ -1,0 +1,1 @@
+Cấu hình Jenkins agent có Node 18 + Docker. Chạy `docker compose` cho app và `npx playwright test`.

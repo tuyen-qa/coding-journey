@@ -1,0 +1,1 @@
+export const safeAsync = (fn)=> fn().then(v=>[v,null]).catch(e=>[null,e])

@@ -1,0 +1,10 @@
+import express from 'express';
+import { graphqlHTTP } from 'express-graphql';
+import { buildSchema } from 'graphql';
+const schema = buildSchema(`type Query{ hello: String }`);
+const root = { hello: ()=> 'world' };
+const app = express();
+app.use('/graphql', graphqlHTTP({ schema, rootValue: root, graphiql: false }));
+app.get('/health', (_,res)=> res.json({ok:true}));
+const port = process.env.PORT || 4000;
+app.listen(port, ()=> console.log('gateway on', port));

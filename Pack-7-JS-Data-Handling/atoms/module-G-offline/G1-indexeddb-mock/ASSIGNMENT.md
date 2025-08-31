@@ -1,0 +1,1 @@
+idbCache.get/set + fetchWithCache.

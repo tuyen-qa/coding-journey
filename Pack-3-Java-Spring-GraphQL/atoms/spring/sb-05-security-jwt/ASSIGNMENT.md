@@ -1,0 +1,1 @@
+Bảo vệ `/secure` cần auth; `/public` mở.

@@ -1,0 +1,1 @@
+import assert from 'node:assert/strict'; import { bindOnce } from '../src/index.js'; function f(x){ return this.v + x } const g=bindOnce(f,{v:2}); assert.equal(g(3),5); console.log('JS-02 OK');

@@ -1,0 +1,1 @@
+Sử dụng createApi để fetch https://jsonplaceholder.typicode.com/users.

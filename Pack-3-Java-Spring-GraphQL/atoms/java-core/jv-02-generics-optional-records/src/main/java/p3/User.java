@@ -1,0 +1,1 @@
+package p3; public record User(String id, String email){}

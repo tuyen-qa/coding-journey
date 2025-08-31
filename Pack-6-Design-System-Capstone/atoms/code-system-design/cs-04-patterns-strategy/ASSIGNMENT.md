@@ -1,0 +1,1 @@
+Thêm chiến lược buy-x-get-y.

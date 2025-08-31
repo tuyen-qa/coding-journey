@@ -1,0 +1,1 @@
+export default function Button({children,...props}){ return <button style={{padding:8, borderRadius:4}} {...props}>{children}</button>; }

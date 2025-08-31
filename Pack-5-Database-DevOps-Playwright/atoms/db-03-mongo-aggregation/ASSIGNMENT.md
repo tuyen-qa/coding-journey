@@ -1,0 +1,1 @@
+Import `sample.json` vào collection `orders` và chạy pipeline trong `pipeline.json`.

@@ -1,0 +1,1 @@
+Build: `docker build -t mini-node .` & run: `docker run -p 3000:3000 mini-node`.

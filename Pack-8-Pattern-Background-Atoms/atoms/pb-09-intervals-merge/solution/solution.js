@@ -1,0 +1,1 @@
+export const mergeIntervals=(iv)=>{ if(!iv.length) return []; iv=iv.slice().sort((a,b)=>a[0]-b[0]); const out=[iv[0].slice()]; for(const [s,e] of iv.slice(1)){ const last=out[out.length-1]; if(s<=last[1]) last[1]=Math.max(last[1],e); else out.push([s,e]); } return out; }

@@ -1,0 +1,1 @@
+export async function order(){ const arr=[]; arr.push('start'); Promise.resolve().then(()=>arr.push('micro')); await new Promise(r=> setTimeout(()=>{ arr.push('macro'); r(); }, 0)); return arr }

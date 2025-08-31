@@ -1,0 +1,1 @@
+Mô phỏng API và đảm bảo không vượt concurrency.

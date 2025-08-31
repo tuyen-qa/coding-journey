@@ -1,0 +1,1 @@
+Cài `hasPairWithSum(arrSorted, target)` (arr đã sort). Thêm 4 test.

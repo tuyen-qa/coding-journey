@@ -1,0 +1,1 @@
+Thêm validate bắt buộc subject & to.

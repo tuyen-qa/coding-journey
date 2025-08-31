@@ -1,0 +1,1 @@
+export default function Input(props){ return <input style={{padding:6, border:'1px solid #ccc'}} {...props}/>; }

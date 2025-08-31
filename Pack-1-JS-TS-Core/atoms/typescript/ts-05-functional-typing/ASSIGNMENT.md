@@ -1,0 +1,1 @@
+curry và compose typing đơn giản.

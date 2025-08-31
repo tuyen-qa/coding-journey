@@ -1,0 +1,13 @@
+pipeline {
+  agent any
+  stages {
+    stage('Checkout'){ steps { checkout scm } }
+    stage('Setup Node'){ steps { sh 'node -v || true'; sh 'npm -v || true' } }
+    stage('Install Tests'){ steps { dir('tests'){ sh 'npm ci || npm i' } } }
+    stage('Compose Up'){ steps { dir('atoms/do-02-docker-compose'){ sh 'docker compose up -d --build' } } }
+    stage('Playwright Tests'){ steps { dir('tests'){ sh 'npx playwright install --with-deps || true'; sh 'npm run test:e2e' } } }
+  }
+  post {
+    always { dir('atoms/do-02-docker-compose'){ sh 'docker compose down || true' } }
+  }
+}

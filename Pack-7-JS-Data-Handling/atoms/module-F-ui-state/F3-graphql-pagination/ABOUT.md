@@ -1,0 +1,1 @@
+# F3 — GraphQL pagination merge (cursor)

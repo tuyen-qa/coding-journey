@@ -1,0 +1,1 @@
+export const bindOnce=(fn,obj)=>function(...args){ return fn.apply(obj,args) }

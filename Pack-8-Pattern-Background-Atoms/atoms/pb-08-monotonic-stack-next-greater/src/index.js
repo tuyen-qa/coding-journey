@@ -1,0 +1,1 @@
+export function nextGreater(nums){ const res=Array(nums.length).fill(-1), st=[]; for(let i=0;i<nums.length;i++){ while(st.length && nums[i]>nums[st[st.length-1]]){ const j=st.pop(); res[j]=nums[i]; } st.push(i);} return res;}

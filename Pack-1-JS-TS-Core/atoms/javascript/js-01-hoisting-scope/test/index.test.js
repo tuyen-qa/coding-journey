@@ -1,0 +1,1 @@
+import assert from 'node:assert/strict'; import { makeCounter } from '../src/index.js'; const c=makeCounter(1); assert.equal(c(),2); assert.equal(c(),3); console.log('JS-01 OK');

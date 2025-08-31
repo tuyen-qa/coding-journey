@@ -1,0 +1,1 @@
+State: {type:'idle'|'loading'|'done'|'error'}; exhaustive switch.

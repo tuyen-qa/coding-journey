@@ -1,0 +1,1 @@
+createSelector với memo đơn giản.

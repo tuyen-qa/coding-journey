@@ -1,0 +1,1 @@
+delay(ms,val) trả Promise resolve sau ms; test chaining.

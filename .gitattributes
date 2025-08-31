@@ -1,0 +1,54 @@
+# ========================
+# Default behaviour
+# ========================
+# Force all text files to use LF (Linux style line endings)
+* text=auto eol=lf
+
+# ========================
+# Programming Languages
+# ========================
+# JavaScript / TypeScript
+*.js   text eol=lf
+*.ts   text eol=lf
+*.jsx  text eol=lf
+*.tsx  text eol=lf
+
+# Java / Spring Boot
+*.java text eol=lf
+*.gradle text eol=lf
+*.properties text eol=lf
+*.xml  text eol=lf
+
+# JSON / YAML / Config
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+
+# Markdown / Docs
+*.md   text eol=lf
+*.txt  text eol=lf
+
+# Shell / Docker
+*.sh   text eol=lf
+Dockerfile text eol=lf
+
+# ========================
+# Windows Specific Scripts
+# ========================
+# Batch files should keep CRLF
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# ========================
+# Binary Files
+# ========================
+# Don't touch line endings in binaries
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.jar binary
+*.class binary

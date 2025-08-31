@@ -1,0 +1,1 @@
+export function twoSum(nums, target){ const pos=new Map(); for(let i=0;i<nums.length;i++){ const need=target-nums[i]; if(pos.has(need)) return [pos.get(need), i]; pos.set(nums[i], i);} return null;}

@@ -1,0 +1,1 @@
+Không mutate input.

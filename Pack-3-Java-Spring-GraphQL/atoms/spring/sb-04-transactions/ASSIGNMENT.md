@@ -1,0 +1,1 @@
+Viết service tạo user + tạo log; ném lỗi để thấy rollback.

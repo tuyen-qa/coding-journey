@@ -1,0 +1,1 @@
+export const topKFrequent=(nums,k)=>{ const cnt=new Map(); for(const x of nums) cnt.set(x,(cnt.get(x)||0)+1); const arr=[...cnt.entries()].map(([v,f])=>[f,v]).sort((a,b)=>b[0]-a[0]); return arr.slice(0,k).map(x=>x[1]); }

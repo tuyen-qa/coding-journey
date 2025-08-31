@@ -1,0 +1,1 @@
+import assert from 'node:assert/strict'; import { two } from '../src/index.js'; const d=(ms,v)=> new Promise(r=> setTimeout(()=>r(v), ms)); const t0=Date.now(); const s=await two(d); const dt=Date.now()-t0; assert.equal(s,3); assert.ok(dt>=9); console.log('JS-05 OK');

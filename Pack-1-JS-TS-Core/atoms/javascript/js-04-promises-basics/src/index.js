@@ -1,0 +1,1 @@
+export const delay=(ms,val)=> new Promise(r=> setTimeout(()=>r(val), ms))

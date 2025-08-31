@@ -1,0 +1,1 @@
+`docker compose up -d` rồi `curl http://localhost:3000/health`.

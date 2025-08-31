@@ -1,0 +1,1 @@
+package p3.tx; import org.springframework.data.jpa.repository.*; public interface AuditRepo extends JpaRepository<AuditLog,Long>{}

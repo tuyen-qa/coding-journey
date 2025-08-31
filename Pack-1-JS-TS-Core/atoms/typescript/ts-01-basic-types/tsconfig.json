@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "outDir": "../../../dist/ts-01-basic-types",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src",
+    "test"
+  ]
+}

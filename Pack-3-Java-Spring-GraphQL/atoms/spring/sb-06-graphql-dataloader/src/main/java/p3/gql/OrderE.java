@@ -1,0 +1,1 @@
+package p3.gql; import jakarta.persistence.*; @Entity(name="orders") public class OrderE{ @Id @GeneratedValue Long id; public Long userId; public int totalCents; public OrderE(){} public OrderE(Long u,int t){userId=u; totalCents=t;} }

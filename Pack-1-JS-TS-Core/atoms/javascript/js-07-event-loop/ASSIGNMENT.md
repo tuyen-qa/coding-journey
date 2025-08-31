@@ -1,0 +1,1 @@
+push thứ tự thực thi vào mảng; test microtask trước setTimeout.

@@ -1,0 +1,1 @@
+package p3.gql; import jakarta.persistence.*; @Entity public class User{ @Id @GeneratedValue Long id; public String email; public User(){} public User(String e){ this.email=e; } }

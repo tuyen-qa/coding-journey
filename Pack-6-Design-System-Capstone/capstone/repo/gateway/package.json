@@ -1,0 +1,10 @@
+{
+  "name": "cap-gateway",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "graphql": "^16.8.1",
+    "express": "^4.19.2",
+    "express-graphql": "^0.12.0"
+  }
+}

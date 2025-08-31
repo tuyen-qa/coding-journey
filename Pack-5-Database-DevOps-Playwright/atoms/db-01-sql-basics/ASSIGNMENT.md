@@ -1,0 +1,1 @@
+Chạy `psql -f schema.sql` rồi `psql -f seed.sql`. Viết kết quả cho từng câu trong `queries.sql` (SELECT với JOIN, GROUP BY).

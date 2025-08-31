@@ -1,0 +1,1 @@
+Dùng react-router-dom v6 tạo routes /, /about.

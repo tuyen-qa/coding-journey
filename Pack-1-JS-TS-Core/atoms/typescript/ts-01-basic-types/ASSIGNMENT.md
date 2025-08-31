@@ -1,0 +1,1 @@
+Định nghĩa Result<T> và safeParseInt(s): Result<number>.

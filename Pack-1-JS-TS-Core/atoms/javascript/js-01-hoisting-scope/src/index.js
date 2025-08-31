@@ -1,0 +1,1 @@
+export function makeCounter(start=0){ let n=start; return ()=> ++n }

@@ -1,0 +1,1 @@
+Cài `nextGreater(nums)`; -1 nếu không có.

@@ -1,0 +1,1 @@
+export function pLimit(k){ let active=0; const q=[]; const run=(fn,rs,rj)=>{ active++; Promise.resolve().then(fn).then(rs,rj).finally(()=>{ active--; if(q.length){ const [f,rs2,rj2]=q.shift(); run(f,rs2,rj2); } }); }; return fn=> new Promise((rs,rj)=>{ if(active<k) run(fn,rs,rj); else q.push([fn,rs,rj]); }); }

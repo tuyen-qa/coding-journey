@@ -1,0 +1,1 @@
+two(delayer) chạy tuần tự 2 delay 5ms; tổng thời gian ~>=10ms.

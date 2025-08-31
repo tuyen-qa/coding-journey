@@ -1,0 +1,1 @@
+export async function two(d){ const a=await d(5,1); const b=await d(5,2); return a+b }

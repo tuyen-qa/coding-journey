@@ -1,0 +1,1 @@
+# F2 — RTK Query caching policy (doc + mock)

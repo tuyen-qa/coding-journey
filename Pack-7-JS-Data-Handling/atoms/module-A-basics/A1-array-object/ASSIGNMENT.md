@@ -1,0 +1,1 @@
+Hoàn thiện hàm và đảm bảo không mutate input. Chạy test: `node test/index.test.js`.

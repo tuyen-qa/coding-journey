@@ -1,0 +1,1 @@
+pLimit(k) đảm bảo tối đa k promise chạy; test với k=2.

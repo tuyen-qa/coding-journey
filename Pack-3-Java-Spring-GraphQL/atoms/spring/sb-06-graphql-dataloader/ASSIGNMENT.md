@@ -1,0 +1,1 @@
+Thêm mutation tạo user; dùng GraphQlTester cho test.

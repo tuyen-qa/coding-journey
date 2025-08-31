@@ -1,0 +1,1 @@
+# E1 — Schema validation mini

@@ -1,0 +1,1 @@
+export const all=(arr)=>Promise.all(arr); export const any=(arr)=>Promise.any(arr); export const race=(arr)=>Promise.race(arr);
