@@ -1,18 +1,18 @@
 # 🗂️ Kanban Board — Coding Journey
 
 Quản lý tiến độ học theo Pack / Week / Day.  
-Cột: **To Do** (chưa làm) → **In Progress** (đang học) → **Done** (xong + có Reflection + commit GitHub).
+Cột: **To Do** (chưa làm) ⬜ To Do  → **In Progress** (đang học) ⏳ In Progress → **Done** ✅ Done (xong + có Reflection + commit GitHub).
 
 ---
 
 ## 📦 Pack 1 — JavaScript Core
-| Atom / Topic                     | Status       | Notes |
-|----------------------------------|--------------|-------|
-| PB-01 Variables & Scope          | ✅ Done       | Reflection OK |
-| PB-02 Functions & Closure        | ✅ Done       | Need luyện thêm ví dụ |
-| PB-03 Async (Promise/await)      | ⏳ In Progress| |
-| PB-04 OOP vs FP                  | ⬜ To Do      | |
-| PB-05 Mini Project CLI           | ⬜ To Do      | |
+| Atom / Topic                     | Status   | Notes |
+|----------------------------------|----------|-------|
+| PB-01 Variables & Scope          | ✅ Done   | Reflection OK |
+| PB-02 Functions & Closure        | ⬜ To Do  | Need luyện thêm ví dụ |
+| PB-03 Async (Promise/await)      | ⬜ To Do  | |
+| PB-04 OOP vs FP                  | ⬜ To Do  | |
+| PB-05 Mini Project CLI           | ⬜ To Do  | |
 
 ---
 
