@@ -1,0 +1,8 @@
+{
+  "name": "pack-1-js-ts-core",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node test/index.test.js"
+  }
+}
