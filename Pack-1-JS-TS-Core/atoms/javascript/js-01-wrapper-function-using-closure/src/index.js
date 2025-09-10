@@ -16,11 +16,30 @@ export function once(fn) {
 }
 
 export function debounce(fn, delay=10) {
-    let timer;
-    return (...args) => {
+    let timer, lastArgs;
+
+    function debounced(...args) {
         clearTimeout(timer);
         timer = setTimeout(() => fn(...args), delay);
     }
+
+    // 👇 gắn thêm property/method vào inner function object
+    debounced.cancel = () => {
+        clearTimeout(timer);
+        timer = null;
+        lastArgs = undefined;
+    };
+
+    debounced.flush = () => {
+        if(timer) {
+            clearTimeout(timer);
+            fn(...lastArgs);
+            timer = null;
+            lastArgs = undefined;
+        }
+    }
+
+    return debounced;
 }
 
 export function throttle(fn, interval=0) {
