@@ -49,6 +49,16 @@ describe("ung dung cua this", () => {
         assert.equal(t2, "Clock");
         assert.equal(t3, "Clock");
 
+        const t4 = timer.outerLoose();
+        const t5 = timer.outerArrow();
+        const t6 = timer.outerBind();
+        const t7 = timer.outerCall();
+
+        assert.equal(t4, undefined);
+        assert.equal(t5, "Clock");
+        assert.equal(t6, "Clock");
+        assert.equal(t7, "Clock");
+
     })
 
     it('this voi .call de chia se method', () => {

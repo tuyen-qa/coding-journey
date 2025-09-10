@@ -37,6 +37,35 @@ Person.prototype.sayHi = function() {
 export const timer = {
     name: "Clock",
 
+    outerLoose() {
+        function inner() {
+            return this?.name;
+        }
+        return inner();
+    },
+
+    outerArrow() {
+        const inner = () => {
+            return this.name;
+        }
+        return inner();
+    },
+
+    outerBind() {
+        function inner() {
+            return this.name;
+        }
+        const bound = inner.bind(this);
+        return bound();
+    },
+
+    outerCall() {
+        function inner() {
+            return this.name;
+        }
+        return inner.call(this);
+    },
+
     runLoose() {
         return new Promise((resolve) => {
             setTimeout(function () {
