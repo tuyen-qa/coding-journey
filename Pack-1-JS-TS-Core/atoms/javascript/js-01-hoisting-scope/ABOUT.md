@@ -79,13 +79,13 @@ console.log(b); // ReferenceError
 - Function declaration hoisting giúp code dễ đọc, nhưng function expression / arrow function thì không.
 - Luôn rõ ràng về **scope** để tránh biến “lọt” ra ngoài ngoài ý muốn.
 
-### closure
-#### Closure là gì?
+## closure
+### Closure là gì?
 - **Closure = function object + lexical environment (scope) mà nó capture.**
 - Khi outer function return một inner function, inner function vẫn giữ reference tới biến cục bộ của outer.
 - Những biến đó trở thành **private state**: chỉ có thể truy cập thông qua closure, không lộ ra ngoài.
 
-#### Ví dụ nguyên thủy
+### Ví dụ nguyên thủy
 ```js
 function outer() {
   let secret = 42;
@@ -102,7 +102,7 @@ console.log(fn()); // 43
 - `secret` nằm trong lexical environment của `outer`.
 - Closure chính là cặp đôi: `inner` + environment chứa `secret`.
 
-#### Vì sao makeCounter phải trả về function?
+### Vì sao makeCounter phải trả về function?
 - Nếu chỉ `return ++count` → bạn chỉ nhận 1 giá trị rồi hết, không thể gọi tiếp.
 - Nếu `return function() { ... }` → bạn có một **closure** nhớ được biến `count`.
 - Closure giúp:
@@ -110,7 +110,7 @@ console.log(fn()); // 43
   - Tạo nhiều counter độc lập (c1, c2 không ảnh hưởng nhau).
   - Biến `count` thành **private state**, không ai bên ngoài truy cập trực tiếp được.
 
-#### Sơ đồ bộ nhớ
+### Sơ đồ bộ nhớ
 ```
 Heap giữ lại vì có closure tham chiếu:
   EnvironmentBox (outer scope)
@@ -163,3 +163,4 @@ Function object: inner
   + cache chỉ được tạo một lần khi bạn gọi makeSquareCache().
   + Hàm square trả về từ makeSquareCache giữ tham chiếu tới cache → closure làm cache sống dai.
   + Lợi ích: gọi nhiều lần với cùng input sẽ dùng lại kết quả từ cache.
+
