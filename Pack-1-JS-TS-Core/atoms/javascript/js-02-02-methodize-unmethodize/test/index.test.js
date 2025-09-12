@@ -16,7 +16,9 @@ import {
   QB, createQB,
   // pipe
   pipePlain, pipeMethod
-} from '../src/solution.js';
+} from '../src/index.practice.js';
+
+
 
 /* ==========  1) Unmethodize built-ins for array-like  ========== */
 
