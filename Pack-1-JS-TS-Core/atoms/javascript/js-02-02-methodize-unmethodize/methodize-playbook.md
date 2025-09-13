@@ -9,6 +9,8 @@
 - **Định nghĩa:** chuyển **hàm thuần** `(obj, ...args)` thành **method** dùng `this` → `(...args)`.
 - **Chữ ký input:** `(obj, ...args)`
 - **Chữ ký output:** `(...args)` nhưng gọi nội bộ là `fn(this, ...args)`.
+- **Hành vi:** khi method chạy, nó gọi lại `fn(this, ...args)` (có thể kèm ...preset nếu muốn “cài sẵn” tham số)..
+> Bạn chỉ cần nhớ: đưa this thành tham số đầu của hàm thuần.
 - **Công thức chuẩn:**  
   ```js
   function methodize(fn, ...preset) {
@@ -16,11 +18,28 @@
       throw new TypeError('methodize: fn must be a function');
     }
     return function (...args) {
+      // 'this' ở đây chính là object nơi bạn gắn method
       return fn(this, ...preset, ...args);
     };
   }
   ```
 - **Lợi ích:** cho phép tái sử dụng hàm thuần ở dạng API `.chấm`, xây DSL/fluent API, dễ chain.
+- **Cần biết gì để thiết kế methodize**:
+  - Hàm thuần `(obj, ...args)`: logic không dựa vào this, mà nhận object qua tham số đầu. 
+  - this binding trong JS: method được gọi như `obj.method()` thì `this === obj`. 
+  - Rest/Spread `...args`: để giữ nguyên chữ ký các tham số còn lại của fn. 
+  - Preset (tuỳ chọn): `methodize(fn, ...preset)` → method sẽ gọi `fn(this, ...preset, ...args)` (tiện làm “cấu hình”).
+
+(Tuỳ chọn) methodizeChain: nếu fn là mutator (sửa obj tại chỗ), bạn có thể làm bản chain luôn return this.
+   ```js
+   function methodizeChain(fn, ...preset) {
+     if (typeof fn !== 'function') throw new TypeError('methodizeChain: fn must be a function');
+     return function (...args) {
+       fn(this, ...preset, ...args);
+       return this; // để chain
+     };
+   }
+   ```
 
 ---
 

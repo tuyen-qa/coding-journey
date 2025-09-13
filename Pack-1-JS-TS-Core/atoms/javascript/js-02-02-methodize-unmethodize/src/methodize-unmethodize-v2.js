@@ -57,7 +57,10 @@ export function unmethodizeSafe(method, adapt) {
  * - Return: function(...args) { return fn(this, ...preset, ...args) }
  */
 export function methodize(fn, ...preset) {
-  // TODO
+  if (typeof fn !== 'function') throw new TypeError(`${fn} is not a function`);
+  return function (...args) {
+      return fn(this, ...preset, ...args);
+  }
 }
 
 /**
@@ -65,5 +68,9 @@ export function methodize(fn, ...preset) {
  * - Like methodize but always returns `this` (use only for mutators)
  */
 export function methodizeChain(fn, ...preset) {
-  // TODO (optional)
+  if (typeof fn !== 'function') throw new TypeError(`${fn} is not a function`);
+  return function (...args) {
+      fn(this, ...preset, ...args);
+      return this;
+  }
 }

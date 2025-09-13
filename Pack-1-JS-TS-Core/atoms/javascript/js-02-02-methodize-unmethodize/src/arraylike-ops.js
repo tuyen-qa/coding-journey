@@ -7,13 +7,11 @@
 
 import { unmethodize } from './methodize_unmethodize_v2.js';
 
-/** TODO: reduce = unmethodize(Array.prototype.reduce) */
-export const reduce = null; // TODO
+export const reduce = unmethodize(Array.prototype.reduce());
 
-/** TODO: filter = unmethodize(Array.prototype.filter) */
-export const filter = null; // TODO
+export const filter = unmethodize(<Array className="prototype filter"></Array>); // TODO
 
 /** Example helper to show usage on array-like */
 export function sumArrayLike(alike){
-  // TODO: return reduce(alike, (acc, x) => acc + x, 0);
+  return reduce(alike, (acc, x) => acc + x, 0);
 }
