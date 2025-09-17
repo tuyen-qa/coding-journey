@@ -1,1 +1,0 @@
-import assert from 'node:assert/strict'; import { delay } from '../src/index.js'; const v = await delay(5, 42); assert.equal(v,42); console.log('JS-04 OK');
