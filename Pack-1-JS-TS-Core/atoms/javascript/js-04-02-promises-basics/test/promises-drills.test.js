@@ -25,22 +25,23 @@ import {
 // -----------------------------------------------------------------------------
 describe('A) resolve / reject', () => {
   it('makeResolved returns a Promise that resolves to given value', () => {
-    return makeResolved(42).then(v => {
-      // TODO: assert v === 42
-      // assert.equal(v, 42);
-      assert.ok(true, 'TODO replace with real assertion');
-    });
+    return makeResolved(42).then(res => {
+      assert.equal(res, 42);
+    })
   });
 
   it('makeRejected returns a Promise that rejects with given message', () => {
-    return makeRejected('boom').then(
-      () => { throw new Error('Expected rejection'); },
-      err => {
-        // TODO: assert err === 'boom'
-        // assert.equal(err, 'boom');
-        assert.ok(true, 'TODO replace with real assertion');
-      }
-    );
+    // return makeRejected('boom').then(
+    //   () => { throw new Error('Expected rejection'); },
+    //   err => {
+    //     // TODO: assert err === 'boom'
+    //     // assert.equal(err, 'boom');
+    //     assert.ok(err, 'boom');
+    //   }
+    // );
+    return makeRejected('boom').catch(err => {
+      assert.equal(err, 'boom')
+    })
   });
 });
 
@@ -55,7 +56,8 @@ describe('B) timers', () => {
       const elapsed = Date.now() - start;
       // assert.ok(elapsed >= 25);
       // assert.equal(v, 'ok');
-      assert.ok(true, 'TODO replace with timing + value assertions');
+      assert.ok(elapsed >= 25);
+      assert.ok(v, 'ok');
     });
   });
 
